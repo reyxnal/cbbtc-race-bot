@@ -12,6 +12,9 @@
 // then done. For every batch the bot answers exactly one reply line with
 // its orders. Orders decided on a batch fill at the next bar's open.
 //
+// Parameters below were tuned on the dev window with a simulator that
+// replicates this bot exactly, and confirmed on both halves of the window.
+//
 // Strategy, per batch, for the single symbol CBBTC:
 //   entry: flat, at least LOOKBACK closes seen, no position opened or
 //     closed in the last COOLDOWN bars, and the latest close is at least
